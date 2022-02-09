@@ -25,6 +25,10 @@ a{
     display: none;
     content: "";
 }
+.con{
+    width: 1200px;
+    margin: 0 auto;
+}
 
 /* style */
 
@@ -124,6 +128,9 @@ a{
     margin-bottom: 15px;
     font-weight:300;
 }
+.nav_2_depth_wrap > .nav_2_depth > .nav_left_1 > .category_box > ul > li.bold{
+    font-weight: 500;
+}
 .nav_2_depth_wrap > .nav_2_depth > .nav_left_1 > .category_box > ul > li:hover{
     font-weight: 500;
 }
@@ -189,6 +196,7 @@ a{
 .nav_2_depth_wrap > .nav_2_depth > .close_btn.active_2{
     left : 35%;
 }
+/* nav_2_depth_wrap end */
 
 
 /* main_slider_wrap start */
@@ -196,6 +204,57 @@ a{
     width: 100%;
     height: 930px;
     background-color: black;
+    position: relative;
+}
+
+.main_slider_wrap > .slider_arrow > .left_arrow{
+    position: absolute;
+    top: 430px;
+    left: 100px;
+    cursor: pointer;
+}
+.main_slider_wrap > .slider_arrow > .right_arrow{
+    position: absolute;
+    top: 430px;
+    right: 100px;
+    cursor: pointer;
+}
+
+.main_slider .slick-dots{
+    bottom: 25px;
+  }
+  .main_slider .slick-dots li button:before{
+    font-size: 50px ;
+    color: white;
+  }
+  .main_slider .slick-dots li.slick-active button:before {
+    color: white;
+  }
+  /* main_slider_wrap end */
+
+
+  /* section_01 start */
+.section_01{
+    height: 500px;
+    margin-top: 140px;
+}
+
+.section_01 > .title > p{
+    font-size: 36px;
+    font-weight: 500px;
+    line-height: 40px;
+}
+.section_01 > .title > p > a{
+    font-size: 24px;
+    font-weight: 300px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.section_01 > .clock{
+    width: 290px;
+    height: 50px;
+    background-color: #333;
+    margin: 0 auto;
 }
 
 

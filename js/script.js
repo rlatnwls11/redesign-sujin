@@ -1,13 +1,5 @@
 $(document).ready(function(){
 
-    //메인 슬라이드
-    $(".main_slider").slick({
-        autoplay : true,
-        autoplaySpeed : 3000,
-        arrows : false,
-        pauseOnHover : false,
-    });
-
     //카테고리 열기
     $(".nav_wrap > .category_box").click(function(){
         $(".nav_2_depth_wrap").addClass("active");
@@ -31,6 +23,8 @@ $(document).ready(function(){
         $(".nav_2_depth_wrap > .nav_2_depth > .nav_left_2 > .content").eq(indexNum).addClass("active");
         $(".nav_2_depth_wrap > .nav_2_depth > .nav_left_2 > .content").eq(indexNum).siblings().removeClass("active");
         $(".nav_2_depth_wrap > .nav_2_depth > .close_btn").addClass("active_2");
+        $(this).addClass("bold");
+        $(this).siblings().removeClass("bold");
     });
 
      //2차 카테고리 닫기
@@ -42,9 +36,23 @@ $(document).ready(function(){
         $(".nav_2_depth_wrap > .nav_2_depth > .close_btn").removeClass("active_2");
     });
 
-    //카테고리에 해당하는 li 글씨 두껍게 하기
-    
 
+      //메인 슬라이드
+    $(".main_slider").slick({
+        autoplay : true,
+        autoplaySpeed : 3000,
+        arrows : false,
+        pauseOnHover : false,
+        dots : true,
+   });
+
+   $(".main_slider_wrap > .slider_arrow > .left_arrow").click(function(){
+       $(".main_slider_wrap > .main_slider").slick("slickNext");
+   });
+
+   $(".main_slider_wrap > .slider_arrow > .right_arrow").click(function(){
+    $(".main_slider_wrap > .main_slider").slick("slickPrev");
+    });
 
 
 
