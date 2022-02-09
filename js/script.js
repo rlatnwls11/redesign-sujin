@@ -20,7 +20,7 @@ $(document).ready(function(){
         $(".nav_2_depth_wrap > .nav_2_depth > .nav_left_1").removeClass("active");
         $(this).removeClass("active");
         $(".nav_2_depth_wrap > .nav_2_depth > .nav_left_2").removeClass("active");
-    })
+    });
 
     //2차 카테고리 열기
     $(".nav_2_depth_wrap > .nav_2_depth > .nav_left_1 > .category_box > ul > li").click(function(){
@@ -30,10 +30,20 @@ $(document).ready(function(){
         $(".nav_2_depth_wrap > .nav_2_depth > .nav_left_2").addClass("active");
         $(".nav_2_depth_wrap > .nav_2_depth > .nav_left_2 > .content").eq(indexNum).addClass("active");
         $(".nav_2_depth_wrap > .nav_2_depth > .nav_left_2 > .content").eq(indexNum).siblings().removeClass("active");
-        $(".nav_2_depth_wrap > .nav_2_depth > .close_btn").css({
-            "left": "35%",
-        });
+        $(".nav_2_depth_wrap > .nav_2_depth > .close_btn").addClass("active_2");
     });
+
+     //2차 카테고리 닫기
+    $(".nav_2_depth_wrap > .nav_2_depth > .close_btn").click(function(){
+        $(".nav_2_depth_wrap").removeClass("active");
+        $(".nav_2_depth_wrap > .nav_2_depth > .nav_left_1").removeClass("active");
+        $(this).removeClass("active");
+        $(".nav_2_depth_wrap > .nav_2_depth > .nav_left_2").removeClass("active");
+        $(".nav_2_depth_wrap > .nav_2_depth > .close_btn").removeClass("active_2");
+    });
+
+    //카테고리에 해당하는 li 글씨 두껍게 하기
+    
 
 
 

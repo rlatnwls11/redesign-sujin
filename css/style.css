@@ -124,6 +124,9 @@ a{
     margin-bottom: 15px;
     font-weight:300;
 }
+.nav_2_depth_wrap > .nav_2_depth > .nav_left_1 > .category_box > ul > li:hover{
+    font-weight: 500;
+}
 .nav_2_depth_wrap > .nav_2_depth > .nav_left_1 > .category_box > ul > li:last-child{
     margin-bottom: 0;
 }
@@ -164,6 +167,9 @@ a{
     margin-bottom: 15px;
     font-weight:300;
 }
+.nav_2_depth_wrap > .nav_2_depth > .nav_left_2 > .content > ul > li:hover{
+    font-weight: 500;
+}
 .nav_2_depth_wrap > .nav_2_depth > .nav_left_2 > .content > ul > li:last-child{
     margin-bottom: 0;
 }
@@ -179,6 +185,9 @@ a{
 }
 .nav_2_depth_wrap > .nav_2_depth > .close_btn.active{
     left: 15%;
+}
+.nav_2_depth_wrap > .nav_2_depth > .close_btn.active_2{
+    left : 35%;
 }
 
 
