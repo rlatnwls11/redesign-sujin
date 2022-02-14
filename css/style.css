@@ -240,6 +240,8 @@ a{
 }
 
 .section_01 > .title > p{
+    width: 270px;
+    height: 100px;
     font-size: 36px;
     font-weight: 500px;
     line-height: 40px;
@@ -250,11 +252,71 @@ a{
     font-family: 'Montserrat', sans-serif;
 }
 
-.section_01 > .clock{
+.section_01 > .time{
     width: 290px;
     height: 50px;
-    background-color: #333;
     margin: 0 auto;
+    font-size: 36px;
+    text-align: center;
+}
+
+.section_01 > .arrow{
+    z-index: 999999;
+}
+.section_01 > .arrow > .left_arrow{
+    cursor: pointer;
+}
+.section_01 > .arrow > .right_arrow{
+    margin-left: 75px;
+    cursor: pointer;
+}
+
+
+.section_01 > .slider_wrap{
+    margin-top: 90px;
+}
+.section_01 > .slider_wrap .slick-list{
+    width: 100%;
+}
+.section_01 > .slider_wrap  .content{
+    width: 200px;
+    height: 350px;
+    display: inline-block;
+}
+.section_01 > .slider_wrap  .content > .img_box{
+    width: 200px;
+    height: 200px;
+}
+.section_01 > .slider_wrap  .content > .img_box > img{
+    width: 100%;
+}
+.section_01 > .slider_wrap  .content > .brand > p{
+    margin-top: 10px;
+    font-size: 16px;
+    font-weight: 300;
+    color: black;
+}
+.section_01 > .slider_wrap  .content > .product > p{
+    font-size: 14px;
+    font-weight: 300;
+    color: black;
+    height: 40px;
+}
+.section_01 > .slider_wrap  .content > .price{
+    margin-top: 5px;
+    font-size: 24px;
+    font-weight: bold;
+}
+.section_01 > .slider_wrap  .content > .sale{
+    font-size: 14px;
+}
+.section_01 > .slider_wrap  .content > .sale > p:first-child{
+    color: #CB0015;
+}
+.section_01 > .slider_wrap  .content > .sale > p > del{
+    margin-left: 15px;
+    color: #9E9E9E;
+    font-weight: 300;
 }
 
 
