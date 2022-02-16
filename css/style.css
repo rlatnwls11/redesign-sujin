@@ -46,6 +46,7 @@ a{
     position: absolute;
     top: 0;
     left: 150px;
+    cursor: pointer;
 }
 .nav_wrap > .category_box > .icon > img{
     margin-top: 25px;
@@ -127,12 +128,18 @@ a{
     font-size: 20px;
     margin-bottom: 15px;
     font-weight:300;
+    transition: 0.3s;
+    opacity: 80%;
 }
 .nav_2_depth_wrap > .nav_2_depth > .nav_left_1 > .category_box > ul > li.bold{
     font-weight: 500;
+    font-size: 21px;
+    opacity: 100%;
 }
 .nav_2_depth_wrap > .nav_2_depth > .nav_left_1 > .category_box > ul > li:hover{
     font-weight: 500;
+    font-size: 21px;
+    opacity: 100%;
 }
 .nav_2_depth_wrap > .nav_2_depth > .nav_left_1 > .category_box > ul > li:last-child{
     margin-bottom: 0;
@@ -286,9 +293,14 @@ a{
 .section_01 > .slider_wrap  .content > .img_box{
     width: 200px;
     height: 200px;
+    overflow: hidden;
 }
 .section_01 > .slider_wrap  .content > .img_box > img{
     width: 100%;
+    transition: 0.5s;
+}
+.section_01 > .slider_wrap  .content > .img_box > img:hover{
+    transform: scale(1.1);
 }
 .section_01 > .slider_wrap  .content > .brand > p{
     margin-top: 10px;
@@ -319,6 +331,209 @@ a{
     font-weight: 300;
 }
 
+.section_01 > .bar{
+    width: 100%;
+    height: 5px;
+    background-color: #CB0015;
+    opacity: 20%;
+    margin-top: 20px;
+}
+.section_01 > .red_bar{
+    width: 20%;
+    height: 5px;
+    background-color: #CB0015;
+    margin-top: -5px;
+}
+/* section_01 end */
+
+
+/* banner_01 start */
+.banner_01{
+    margin-top: 170px;
+    padding-top: 30px;
+    width: 100%;
+    height: 200px;
+    background-image: url(../img/banner_01.jpg);
+    box-sizing: border-box;
+}
+.banner_01 > .txt_box > .title{
+    color: white;
+    font-size: 36px;
+}
+.banner_01 > .txt_box > .text{
+    color: white;
+    font-size: 18px;
+    font-weight: 300;
+    line-height: 22px;
+    margin-top: 5px;
+}
+.banner_01 > .txt_box > .more_btn{
+    width: 90px;
+    height: 30px;
+    border: 1px solid white;
+    margin-top: 15px;
+}
+.banner_01 > .txt_box > .more_btn > a{
+    color: white;
+    font-size: 14px;
+    margin-left: 25px;
+    line-height: 30px;
+}
+/* banner_01 end */
+
+
+/* section_02 start */
+.section_02{
+    margin-top: 200px;
+}
+.section_02 > .title{
+    font-size: 36px;
+    font-family: 'Montserrat', sans-serif;;
+    margin: 0 auto;
+    text-align: center;
+    font-weight: bold;
+}
+.section_02 > .nav{
+    margin-bottom: 100px;
+}
+.section_02 > .nav > ul{
+    margin-top: 30px;
+}
+.section_02 > .nav > ul > li{
+    width: 95px;
+    text-align: center;
+    margin-right: 43px;
+    cursor: pointer;
+    position: relative;
+    font-weight: 300;
+}
+.section_02 > .nav > ul > li:after{
+    content: "";
+    width: 0%;
+    height: 2px;
+    display: block;
+    background-color: #CB0015;
+    position: absolute;
+    top: 30px;
+    left: 50%;
+    transform: translateX(-50%);
+    transition: 0.5s;
+}
+.section_02 > .nav > ul:hover > li:first-child:after{
+    width: 0%;
+}
+.section_02 > .nav > ul > li:hover:after{
+    width: 100%;
+}
+.section_02 > .nav > ul > li.active:after{
+    width: 100%;
+}
+.section_02 > .nav > ul > li:last-child{
+    margin-right: 0px;
+}
+
+.section_02 > .content{
+    display: none;
+}
+.section_02 > .content.active{
+    display: block;
+}
+.section_02 > .content > .content_left{
+    width: 500px;
+}
+.section_02 > .content > .content_left > .img_box{
+    width: 500px;
+    height: 550px;
+    overflow: hidden;
+}
+.section_02 > .content > .content_left > .img_box > img{
+    width: 100%;
+    transition: 0.5s;
+}
+.section_02 > .content > .content_left > .img_box > img:hover{
+    transform: scale(1.1);
+}
+.section_02 > .content > .content_left > .brand > p{
+    margin-top: 10px;
+    font-size: 18px;
+    font-weight: 300;
+    color: black;
+}
+.section_02 > .content > .content_left > .product > p{
+    font-size: 16px;
+    font-weight: 300;
+    color: black;
+}
+.section_02 > .content > .content_left > .price{
+    margin-top: 5px;
+    font-size: 24px;
+    font-weight: bold;
+}
+.section_02 > .content > .content_left > .sale{
+    font-size: 14px;
+}
+.section_02 > .content > .content_left > .sale > p:first-child{
+    color: #CB0015;
+}
+.section_02 > .content > .content_left > .sale > p > del{
+    margin-left: 15px;
+    color: #9E9E9E;
+    font-weight: 300;
+}
+
+.section_02 > .content > .content_right{
+    width: 650px;
+    margin-left: 30px;
+}
+.section_02 > .content > .content_right > .content_right_box{
+    margin-right: 20px;
+    margin-bottom: 10px;
+}
+.section_02 > .content > .content_right > .content_right_box:nth-child(3){
+    margin-right: 0px;
+}
+.section_02 > .content > .content_right > .content_right_box:nth-child(6){
+    margin-right: 0px;
+}
+.section_02 > .content > .content_right > .content_right_box > .img_box{
+    width: 200px;
+    height: 200px;
+    overflow: hidden;
+}
+.section_02 > .content > .content_right > .content_right_box > .img_box > img{
+    width: 100%;
+    transition: 0.5s;
+}
+.section_02 > .content > .content_right > .content_right_box > .img_box > img:hover{
+    transform: scale(1.1);
+}
+.section_02 > .content > .content_right > .content_right_box > .brand > p{
+    margin-top: 10px;
+    font-size: 14px;
+    font-weight: 300;
+    color: black;
+}
+.section_02 > .content > .content_right > .content_right_box > .product > p{
+    font-size: 14px;
+    font-weight: 300;
+    color: black;
+}
+.section_02 > .content > .content_right > .content_right_box > .price{
+    margin-top: 5px;
+    font-size: 24px;
+    font-weight: bold;
+}
+.section_02 > .content > .content_right > .content_right_box > .sale{
+    font-size: 14px;
+}
+.section_02 > .content > .content_right > .content_right_box > .sale > p:first-child{
+    color: #CB0015;
+}
+.section_02 > .content > .content_right > .content_right_box > .sale > p > del{
+    margin-left: 15px;
+    color: #9E9E9E;
+    font-weight: 300;
+}
 
 
 

@@ -58,7 +58,7 @@ $(document).ready(function(){
     //section_01 time
     setInterval(function time(){
         var d = new Date();
-        var hours = String(24 - d.getHours()).padStart( 2 , "0");
+        var hours = String(23 - d.getHours()).padStart( 2 , "0");
         var min = String(60 - d.getMinutes()).padStart( 2 , "0");
         if((min + '').length == 1){
           min = '0' + min;
@@ -84,6 +84,19 @@ $(document).ready(function(){
       $(".section_01 > .arrow > .right_arrow").click(function(){
           $(".section_01 > .slider_wrap").slick("slickNext")
       });
+
+      //section_01 bar
+    //   $(".section_01 > .arrow > .right_arrow").click(function(){
+    //         if($(".section_01 > .red_bar").css('width') == "20%"){
+    //             $(".section_01 > .red_bar").css({
+    //                 'width' : '40%',
+    //             });
+    //         }else{
+    //             $(".section_01 > .red_bar").css({
+    //                 'width' : '100%',
+    //             });
+    //         };
+    //   });
 
 
 //end    
