@@ -1,5 +1,7 @@
 $(document).ready(function(){
 
+    AOS.init();
+
     //카테고리 열기
     $(".nav_wrap > .category_box").click(function(){
         $(".nav_2_depth_wrap").addClass("active");
@@ -25,6 +27,8 @@ $(document).ready(function(){
         $(".nav_2_depth_wrap > .nav_2_depth > .close_btn").addClass("active_2");
         $(this).addClass("bold");
         $(this).siblings().removeClass("bold");
+        $(".nav_2_depth_wrap > .nav_2_depth > .nav_left_1 > .arrow > ul > li").eq(indexNum).addClass("active");
+        $(".nav_2_depth_wrap > .nav_2_depth > .nav_left_1 > .arrow > ul > li").eq(indexNum).siblings().removeClass("active");
     });
 
      //2차 카테고리 닫기
@@ -98,6 +102,28 @@ $(document).ready(function(){
     //         };
     //   });
 
+    //section02
+    $(".section_02 > .nav > ul > li").click(function(){
+        //section02 카테고리 바
+        $(this).siblings().removeClass("active");
+        $(this).addClass("active");
+
+        //section02 content
+        var indexNum = $(this).index();
+
+        $(".section_02 > .content_wrap > .content").eq(indexNum).addClass("active")
+        $(".section_02 > .content_wrap > .content").eq(indexNum).siblings().removeClass("active")
+    });
+
+    //section04 left 슬라이드
+    $(".section_04 > .content_left").slick({
+        autoplay : true,
+        autoplaySpeed : 3000,
+        arrows : false,
+        pauseOnHover : false,
+        dots : false,
+        fade : true,
+   });
 
 //end    
 });

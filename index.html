@@ -8,8 +8,10 @@
 
     <script src="./js/jquery-3.6.0.min.js"></script>
     <script src="./js/slick.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
     <link rel="stylesheet" href="./css/slick.css">
     <link rel="stylesheet" href="./css/slick-theme.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -51,9 +53,9 @@
 
     <div class="nav_2_depth_wrap">
         <div class="nav_2_depth">
-            <div class="nav_left_1">
+            <div class="nav_left_1 row">
                 <div class="title">CATEGORY</div>
-                <div class="category_box">
+                <div class="category_box cell">
                     <ul>
                         <li><a href="#">리모델링</a></li>
                         <li><a href="#">침실가구</a></li>
@@ -73,6 +75,28 @@
                         <li><a href="#">조명/홈데코</a></li>
                         <li><a href="#">반려동물</a></li>
                         <li><a href="#">AS부품</a></li>
+                    </ul>
+                </div>
+                <div class="arrow cell">
+                    <ul>
+                        <li><img src="./img/nav_arrow.png" alt=""></li>
+                        <li><img src="./img/nav_arrow.png" alt=""></li>
+                        <li><img src="./img/nav_arrow.png" alt=""></li>
+                        <li><img src="./img/nav_arrow.png" alt=""></li>
+                        <li><img src="./img/nav_arrow.png" alt=""></li>
+                        <li><img src="./img/nav_arrow.png" alt=""></li>
+                        <li><img src="./img/nav_arrow.png" alt=""></li>
+                        <li><img src="./img/nav_arrow.png" alt=""></li>
+                        <li><img src="./img/nav_arrow.png" alt=""></li>
+                        <li><img src="./img/nav_arrow.png" alt=""></li>
+                        <li><img src="./img/nav_arrow.png" alt=""></li>
+                        <li><img src="./img/nav_arrow.png" alt=""></li>
+                        <li><img src="./img/nav_arrow.png" alt=""></li>
+                        <li><img src="./img/nav_arrow.png" alt=""></li>
+                        <li><img src="./img/nav_arrow.png" alt=""></li>
+                        <li><img src="./img/nav_arrow.png" alt=""></li>
+                        <li><img src="./img/nav_arrow.png" alt=""></li>
+                        <li><img src="./img/nav_arrow.png" alt=""></li>
                     </ul>
                 </div>
             </div>
@@ -308,7 +332,7 @@
 
     </div>
 
-    <div class="section_01 con row">
+    <div class="section_01 con row" data-aos="fade-up" data-aos-duration="2000">
         <div class="title cell">
             <p>오늘의 특가 상품<br>
             <a href="#">view all ></a></p>
@@ -442,7 +466,7 @@
         </div>
     </div>
 
-    <div class="section_02 con">
+    <div class="section_02 con" data-aos="fade-up" data-aos-duration="2000">
         <div class="title">Best by category</div>
         <div class="nav">
             <ul class="row">
@@ -457,7 +481,8 @@
                 <li class="cell">조명/홈데코</li>
             </ul>
         </div>
-        <div class="content row">
+        <div class="content_wrap">
+        <div class="content row active">
             <div class="content_left cell">
                 <div class="img_box"><img src="./img/section2_01.jpg" alt=""></div>
                 <div class="brand"><p>한샘 온라인</p></div>
@@ -636,8 +661,7 @@
             <div class="content_left cell">
                 <div class="img_box"><img src="./img/section2_15.jpg" alt=""></div>
                 <div class="brand"><p>한샘 온라인</p></div>
-                <div class="product"><p>한샘 샘 책장 5단 120cm 시공<br>
-                (컬러 택 1)</p></div>
+                <div class="product"><p>한샘 샘 책장 5단 120cm 시공(컬러 택 1)</p></div>
                 <div class="price"><p>109,900</p></div>
                 <div class="sale">
                     <p>17%
@@ -725,8 +749,7 @@
             <div class="content_left cell">
                 <div class="img_box"><img src="./img/section2_22.jpg" alt=""></div>
                 <div class="brand"><p>폴로까사</p></div>
-                <div class="product"><p>폴로까사 생드니 아쿠아텍스<br>
-                스웨이드 4인용 패브릭 소파</p></div>
+                <div class="product"><p>폴로까사 생드니 아쿠아텍스 스웨이드 4인용 패브릭 소파</p></div>
                 <div class="price"><p>543,000</p></div>
                 <div class="sale">
                     <p>39%
@@ -813,8 +836,7 @@
             <div class="content_left cell">
                 <div class="img_box"><img src="./img/section2_29.jpg" alt=""></div>
                 <div class="brand"><p>우드몽드</p></div>
-                <div class="product"><p>(한샘몰pick) 우드몽드 랑데부<br>
-                원목 분리형 이층침대</p></div>
+                <div class="product"><p>(한샘몰pick) 우드몽드 랑데부 원목 분리형 이층침대</p></div>
                 <div class="price"><p>1,242,500</p></div>
                 <div class="sale">
                     <p>22%
@@ -901,8 +923,7 @@
             <div class="content_left cell">
                 <div class="img_box"><img src="./img/section2_36.jpg" alt=""></div>
                 <div class="brand"><p>우드몽드</p></div>
-                <div class="product"><p>한샘 포레 릴렉스 리빙다이닝<br>
-                4인 식탁 벤치세트(의자2...</p></div>
+                <div class="product"><p>한샘 포레 릴렉스 리빙다이닝 4인 식탁 벤치세트(의자2...</p></div>
                 <div class="price"><p>479,000</p></div>
                 <div class="sale">
                     <p>29%
@@ -989,8 +1010,7 @@
             <div class="content_left cell">
                 <div class="img_box"><img src="./img/section2_43.jpg" alt=""></div>
                 <div class="brand"><p>한샘 온라인</p></div>
-                <div class="product"><p>한샘 폴리 수납 바스켓 다용도 <br>
-                 리빙박스 정리함 3p</p></div>
+                <div class="product"><p>한샘 폴리 수납 바스켓 다용도 리빙박스 정리함 3p</p></div>
                 <div class="price"><p>5,900</p></div>
                 <div class="sale">
                     <p>57%
@@ -1076,8 +1096,7 @@
             <div class="content_left cell">
                 <div class="img_box"><img src="./img/section2_50.jpg" alt=""></div>
                 <div class="brand"><p>한샘 온라인</p></div>
-                <div class="product"><p>(한샘톡톡) UV-C LED 칼도마살균<br>
-                 블럭 3.0</p></div>
+                <div class="product"><p>(한샘톡톡) UV-C LED 칼도마살균 블럭 3.0</p></div>
                 <div class="price"><p>119,000</p></div>
                 <div class="sale">
                     <p>40%
@@ -1159,60 +1178,59 @@
                 </div>
             </div>
         </div> 
-        <div class="content row active">
+        <div class="content row">
             <div class="content_left cell">
                 <div class="img_box"><img src="./img/section2_57.jpg" alt=""></div>
                 <div class="brand"><p>한샘 온라인</p></div>
-                <div class="product"><p>(한샘조명) 뉴 엘리시아 램프 세트(테 <br>
-                 이블플로어)</p></div>
-                <div class="price"><p>5,900</p></div>
+                <div class="product"><p>(한샘조명) 뉴 엘리시아 램프 세트(테이블플로어)</p></div>
+                <div class="price"><p>129,000</p></div>
                 <div class="sale">
-                    <p>57%
-                        <del>13,800</del>
+                    <p>65%
+                        <del>365,500</del>
                     </p>
                 </div>
             </div>
             <div class="content_right cell row">
                 <div class="content_right_box cell">
-                    <div class="img_box"><img src="./img/section2_44.jpg" alt=""></div>
-                    <div class="brand"><p>네이쳐리빙</p></div>
-                    <div class="product"><p>네이쳐리빙 모던 트롤리 스윙<br>
-                        빨래바구니 10종</p></div>
-                    <div class="price"><p>15,900</p></div>
+                    <div class="img_box"><img src="./img/section2_58.jpg" alt=""></div>
+                    <div class="brand"><p>다이아소닉</p></div>
+                    <div class="product"><p>(한샘몰pick) 다이아소닉 모리 책상<br>
+                        부착형 LED 스탠드</p></div>
+                    <div class="price"><p>53,900</p></div>
                     <div class="sale">
-                        <p>71%
-                            <del>53,900</del>
+                        <p>36%
+                            <del>84,000</del>
                         </p>
                     </div>
                 </div>
                 <div class="content_right_box cell">
-                    <div class="img_box"><img src="./img/section2_45.jpg" alt=""></div>
+                    <div class="img_box"><img src="./img/section2_59.jpg" alt=""></div>
                     <div class="brand"><p>한샘 온라인</p></div>
-                    <div class="product"><p>한샘 자동센서 휴지통 (3종 / 택1)</p></div>
-                    <div class="price"><p>49,900</p></div>
+                    <div class="product"><p>(한샘조명) 에어 LED 30평대 패키지</p></div>
+                    <div class="price"><p>229,000</p></div>
                     <div class="sale">
-                        <p>50%
-                            <del>99,000</del>
+                        <p>8%
+                            <del>249,000</del>
                         </p>
                     </div>
                 </div>
                 <div class="content_right_box cell">
-                    <div class="img_box"><img src="./img/section2_46.jpg" alt=""></div>
+                    <div class="img_box"><img src="./img/section2_60.jpg" alt=""></div>
                     <div class="brand"><p>한샘 온라인</p></div>
-                    <div class="product"><p>한샘 컴포트 2단 재활용 분리수거함<br>
-                        수납장 80L</p></div>
-                    <div class="price"><p>54,900</p></div>
+                    <div class="product"><p>(한샘조명) 브릭스 까사 LED<br>
+                        방등 (DIY/시공)</p></div>
+                    <div class="price"><p>29,900</p></div>
                     <div class="sale">
-                        <p>31%
-                            <del>79,900</del>
+                        <p>70%
+                            <del>100,700</del>
                         </p>
                     </div>
                 </div>
                 <div class="content_right_box cell">
-                    <div class="img_box"><img src="./img/section2_47.jpg" alt=""></div>
-                    <div class="brand"><p>한샘 온라인</p></div>
-                    <div class="product"><p>한샘 폴리 수납 바스켓 다용도<br>
-                        리빙박스 정리함 6P</p></div>
+                    <div class="img_box"><img src="./img/section2_61.jpg" alt=""></div>
+                    <div class="brand"><p>프리즘</p></div>
+                    <div class="product"><p>(한샘몰pick) 프리즘 티오 스탠드<br>
+                        조명 (컬러 택1)</p></div>
                     <div class="price"><p>12,700</p></div>
                     <div class="sale">
                         <p>64%
@@ -1221,31 +1239,81 @@
                     </div>
                 </div>
                 <div class="content_right_box cell">
-                    <div class="img_box"><img src="./img/section2_48.jpg" alt=""></div>
+                    <div class="img_box"><img src="./img/section2_62.jpg" alt=""></div>
                     <div class="brand"><p>한샘 온라인</p></div>
-                    <div class="product"><p>한샘 스페이스빌더 서랍 리빙박스<br>
-                      수납장</p></div>
-                    <div class="price"><p>26,900</p></div>
+                    <div class="product"><p>(한샘조명)조이 스탠드 시리즈</p></div>
+                    <div class="price"><p>51,900</p></div>
                     <div class="sale">
-                        <p>36%
-                            <del>42,000</del>
+                        <p>12%
+                            <del>59,000</del>
                         </p>
                     </div>
                 </div>
                 <div class="content_right_box cell">
-                    <div class="img_box"><img src="./img/section2_49.jpg" alt=""></div>
+                    <div class="img_box"><img src="./img/section2_63.jpg" alt=""></div>
                     <div class="brand"><p>한샘 온라인</p></div>
-                    <div class="product"><p>한샘 폴리 큐브 수납 바스켓 다용도<br>
-                        리빙박스 정리함 3P</div>
-                    <div class="price"><p>29,900</p></div>
+                    <div class="product"><p>(한샘조명) 밀러 장 스탠드 (2종 택1)</div>
+                    <div class="price"><p>94,900</p></div>
                     <div class="sale">
-                        <p>37%
-                            <del>47,700</del>
+                        <p>26%
+                            <del>129,000</del>
                         </p>
                     </div>
                 </div>
             </div>
         </div> 
+     </div>
+     <div class="view_btn"><a href="#">view all</a></div>
+    </div>
+
+    <div class="section_03">
+        <div class="title">기획전 모아보기</div>
+        <div class="content_box">
+            <div class="content_w_500 content_01" data-aos="fade-right" data-aos-duration="2000">
+                <a href="#"><img src="./img/section3_01.jpg" alt=""></a>
+            </div>
+            <div class="content_w_500 content_02" data-aos="fade-left" data-aos-duration="2000" data-aos-delay="300">
+                <a href="#"><img src="./img/section3_02.jpg" alt=""></a>
+            </div>
+            <div class="content_w_300 content_03" data-aos="fade-right" data-aos-duration="2000" data-aos-delay="300">
+                <a href="#"><img src="./img/section3_03.jpg" alt=""></a>
+            </div>
+            <div class="content_w_500 content_04" data-aos="fade-left" data-aos-duration="2000" data-aos-delay="300">
+                <a href="#"><img src="./img/section3_04.jpg" alt=""></a>
+            </div>
+            <div class="content_w_500 content_05" data-aos="fade-right" data-aos-duration="2000" data-aos-delay="300">
+                <a href="#"><img src="./img/section3_05.jpg" alt=""></a>
+            </div>
+            <div class="content_w_300 content_06" data-aos="fade-left" data-aos-duration="2000" data-aos-delay="300">
+                <a href="#"><img src="./img/section3_06.jpg" alt=""></a>
+            </div>
+        </div>
+    </div> 
+
+    <div class="section_04 con row" data-aos="fade-up" data-aos-duration="2000">
+        <div class="content_left cell">
+            <div class="content_01">
+                <a href="#"><img src="./img/section4_01.jpg" alt=""></a>
+            </div>
+            <div class="content_02">
+                <a href="#"><img src="./img/section4_02.jpg" alt=""></a>
+            </div>
+        </div>
+        <div class="content_right cell">
+            <div class="content_01">
+                <a href="#"><img src="./img/section4_03.jpg" alt=""></a>
+            </div>
+            <div class="content_02">
+                <a href="#"><img src="./img/section4_04.jpg" alt=""></a>
+            </div>
+            <div class="content_03">
+                <a href="#"><img src="./img/section4_05.jpg" alt=""></a>
+            </div>
+        </div>
+    </div>
+
+    <div class="section_05 con">
+        <div class="title">EVENT</div>
     </div>
 
 </body>
