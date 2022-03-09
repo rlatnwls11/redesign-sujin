@@ -125,5 +125,60 @@ $(document).ready(function(){
         fade : true,
    });
 
+   //section05 슬라이드
+   $(".section_05 > .slider_wrap").slick({
+        infinite: true,
+        slidesToShow: 2,
+        slidesToScroll: 2,
+        arrows : false,
+        dots : false,
+        infinite : false,
+   });
+
+   //section05 슬라이드 버튼
+         $(".section_05 > .arrow_box > .left_arrow").click(function(){
+          $(".section_05 > .slider_wrap").slick("slickPrev")
+      });
+      $(".section_05 > .arrow_box > .right_arrow").click(function(){
+          $(".section_05 > .slider_wrap").slick("slickNext")
+      });
+
+    //section05 페이지 수
+      $('.section_05 > .slider_wrap').on('beforeChange', function(event, slick, currentSlide, nextSlide){    
+        $(".section_05 > .arrow_box > .indexnum > .index").text((nextSlide+2)/2);
+      });
+
+    //section05 bar
+      $(".section_05 > .arrow_box > .right_arrow").click(function(){
+          if($(".section_05 > .bar_wrap > .red_bar").css("width") == "900px" ){
+            $(".section_05 > .bar_wrap > .red_bar").css({
+                "width" : "900px",
+            });
+          } else if($(".section_05 > .bar_wrap > .red_bar").css("width") == "300px" ){
+            $(".section_05 > .bar_wrap > .red_bar").css({
+                "width" : "600px",
+            });
+          } else if($(".section_05 > .bar_wrap > .red_bar").css("width") == "600px" ){
+            $(".section_05 > .bar_wrap > .red_bar").css({
+                "width" : "900px",
+            });
+          };
+      });
+      $(".section_05 > .arrow_box > .left_arrow").click(function(){
+        if($(".section_05 > .bar_wrap > .red_bar").css("width") == "300px" ){
+          $(".section_05 > .bar_wrap > .red_bar").css({
+              "width" : "300px",
+          });
+        } else if($(".section_05 > .bar_wrap > .red_bar").css("width") == "600px" ){
+          $(".section_05 > .bar_wrap > .red_bar").css({
+              "width" : "300px",
+          });
+        } else if($(".section_05 > .bar_wrap > .red_bar").css("width") == "900px" ){
+          $(".section_05 > .bar_wrap > .red_bar").css({
+              "width" : "600px",
+          });
+        };
+    });
+
 //end    
 });
