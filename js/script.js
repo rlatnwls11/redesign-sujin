@@ -79,7 +79,7 @@ $(document).ready(function(){
         slidesToShow: 5,
         slidesToScroll: 1,
         arrows : false,
-        dots : false,
+        dots : true,
       });
 
       $(".section_01 > .arrow > .left_arrow").click(function(){
@@ -120,8 +120,8 @@ $(document).ready(function(){
         autoplay : true,
         autoplaySpeed : 3000,
         arrows : false,
-        pauseOnHover : false,
-        dots : false,
+        pauseOnHover : true,
+        dots : true,
         fade : true,
    });
 
