@@ -1,4 +1,18 @@
+$(window).scroll(function(){
+  var $scrollTop = $(this).scrollTop();
+
+  if($scrollTop > 0){
+    $(".go_top_btn_box").css({"opacity": "80%"}, 300);
+  }else{
+    $(".go_top_btn_box").css({"opacity": "0%"}, 300);
+  };
+});
+
 $(document).ready(function(){
+  
+  $(".go_top_btn_box").click(function(){
+    $("html, body").animate({scrollTop:0});
+  });
 
     AOS.init();
 
@@ -180,5 +194,6 @@ $(document).ready(function(){
         };
     });
 
+    
 //end    
 });
